@@ -24,14 +24,6 @@ public class AdresyService {
     }
 
     public void addNewAdresy(Adresy adres) {
-        /*String miasto = adres.getMiasto();
-        String ulica = adres.getUlica();
-        String budynek = adres.getNr_budynku();
-        boolean check;
-        Optional<Adresy> adresyOptional = adresyRepository.findByFields(adres);
-        if (adresyOptional.isPresent()) {
-          throw new IllegalStateException("ulica taken");
-        }*/
         adresyRepository.save(adres);
     }
 
